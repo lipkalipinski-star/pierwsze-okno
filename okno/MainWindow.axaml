@@ -1,9 +1,20 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="okno.MainWindow"
-        Title="okno">
-    Welcome to Avalonia!
+        Title="Moje Pierwsze Okno - Zadanie 2.2"
+        Width="500" Height="350"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="20" Spacing="15" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Witaj w moim własnoręcznie zbudowanym oknie!" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" />
+        <TextBlock Text="Projekt wykonany w ramach Modułu 02 (C# + Avalonia)." 
+                   Foreground="Gray" 
+                   HorizontalAlignment="Center" />
+        <Button Content="Kliknij mnie!" 
+                HorizontalAlignment="Center" 
+                Padding="10,5" />
+    </StackPanel>
 </Window>
